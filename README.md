@@ -1,7 +1,5 @@
-
 # Vertical Slider
-=======
-# Photo filter
-=======
-# Virtual Piano
 
+- repeat the original project
+- required functionality: infinite slider
+- additional functionality: mouse wheel scrolling, mouse swipe scrolling
