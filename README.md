@@ -1,3 +1,1 @@
-# RSS
-
-tasks from RSSchool
+# Photo filter
