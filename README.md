@@ -1,17 +1,17 @@
 # RSS
 
-# Vertical Slider
+## Vertical Slider
 
 =======
 
-# Photo filter
+## Photo filter
 
 =======
 
-# Virtual Piano
+## Virtual Piano
 
 =======
 
-# Momentum
+## Momentum
 
 tasks from RSSchool
