@@ -1,0 +1,259 @@
+:root {
+  --slides-number: 7;
+}
+
+html {
+  font-family: Roboto, sans-serif;
+  color: antiquewhite;
+  background-color: #232323;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+input {
+  display: none;
+}
+
+body {
+  padding: 2%;
+
+  display: grid;
+  grid-gap: 3%;
+  align-content: start;
+}
+
+.container {
+  margin: 0 auto;
+
+  max-width: 133.333vh;
+  width: 96vw;
+
+  overflow: hidden;
+}
+
+.mems__container {
+  max-width: calc(133.3333vh * var(--slides-number));
+  width: calc(96vw * var(--slides-number));
+
+  max-height: calc(100vw * 0.54);
+  height: 75vh;
+
+  transition: transform 1s ease-in-out;
+}
+
+.mems__slides {
+  height: 100%;
+}
+
+/* ====controls====== */
+
+.control-container {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-around;
+
+  overflow: hidden;
+}
+
+.control__notes {
+  height: 4.5vmin;
+
+  display: grid;
+  transition: transform 0.5s ease-in-out;
+}
+
+.notes__p {
+  height: 4.5vmin;
+  padding: 1.2vmin 0;
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+
+.controls__form {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 1%;
+}
+
+.controls__label {
+  padding: 1.5vmin 0.5vmin;
+  width: 2.5vmin;
+  height: 4.5vmin;
+
+  cursor: pointer;
+}
+.controls__label::before {
+  display: inline-block;
+  content: "";
+  width: 1.5vmin;
+  height: 1.5vmin;
+
+  /* cursor: pointer; */
+
+  border-radius: 50%;
+
+  background-color: #72afe4;
+  border: solid 0.3vmin #72afe4;
+}
+
+.controls__label:hover::before {
+  background-color: wheat;
+  border-color: wheat;
+}
+
+.controls__label:active::before {
+  background-color: whitesmoke;
+  border-color: whitesmoke;
+}
+
+/* ====action==== */
+
+#controls__pointer02:checked ~ .mems__container {
+  transform: translateX(calc(-100% / var(--slides-number)));
+}
+
+#controls__pointer03:checked ~ .mems__container {
+  transform: translateX(calc(-200% / var(--slides-number)));
+}
+
+#controls__pointer04:checked ~ .mems__container {
+  transform: translateX(calc(-300% / var(--slides-number)));
+}
+
+#controls__pointer05:checked ~ .mems__container {
+  transform: translateX(calc(-400% / var(--slides-number)));
+}
+
+#controls__pointer06:checked ~ .mems__container {
+  transform: translateX(calc(-500% / var(--slides-number)));
+}
+
+#controls__pointer07:checked ~ .mems__container {
+  transform: translateX(calc(-600% / var(--slides-number)));
+}
+
+/* ====actions notes==== */
+
+#controls__pointer02:checked ~ .control-container .control__notes {
+  transform: translateY(calc(-1 * 100%));
+}
+
+#controls__pointer03:checked ~ .control-container .control__notes {
+  transform: translateY(calc(-2 * 100%));
+}
+
+#controls__pointer04:checked ~ .control-container .control__notes {
+  transform: translateY(calc(-3 * 100%));
+}
+
+#controls__pointer05:checked ~ .control-container .control__notes {
+  transform: translateY(calc(-4 * 100%));
+}
+
+#controls__pointer06:checked ~ .control-container .control__notes {
+  transform: translateY(calc(-5 * 100%));
+}
+
+#controls__pointer07:checked ~ .control-container .control__notes {
+  transform: translateY(calc(-6 * 100%));
+}
+
+/* ====btn==== */
+
+#controls__pointer01:checked
+  ~ .control-container
+  .controls__form
+  label:nth-child(1)::before {
+  background-color: transparent;
+}
+
+#controls__pointer02:checked
+  ~ .control-container
+  .controls__form
+  label:nth-child(2)::before {
+  background-color: transparent;
+}
+
+#controls__pointer03:checked
+  ~ .control-container
+  .controls__form
+  label:nth-child(3)::before {
+  background-color: transparent;
+}
+
+#controls__pointer04:checked
+  ~ .control-container
+  .controls__form
+  label:nth-child(4)::before {
+  background-color: transparent;
+}
+
+#controls__pointer05:checked
+  ~ .control-container
+  .controls__form
+  label:nth-child(5)::before {
+  background-color: transparent;
+}
+
+#controls__pointer06:checked
+  ~ .control-container
+  .controls__form
+  label:nth-child(6)::before {
+  background-color: transparent;
+}
+
+#controls__pointer07:checked
+  ~ .control-container
+  .controls__form
+  label:nth-child(7)::before {
+  background-color: transparent;
+}
+
+@media (max-width: 760px) {
+  .control-container {
+    margin-top: 5%;
+    grid-auto-flow: row;
+    grid-gap: 0;
+  }
+
+  .control__notes {
+    height: 3.9vmax;
+
+    z-index: -1;
+  }
+
+  .notes__p {
+    height: 3.9vmax;
+    padding: 1.2vmax 0;
+    font-size: 1rem;
+    vertical-align: middle;
+  }
+
+  .controls__form {
+    background-color: #232323;
+    grid-gap: 2vmin;
+    order: -1;
+  }
+  .controls__label {
+    order: 1;
+    padding: 1.5vmax 0.5vmax;
+    width: 2.5vmax;
+    height: 4.5vmax;
+
+    cursor: pointer;
+  }
+  .controls__label::before {
+    display: inline-block;
+    content: "";
+    width: 1.5vmax;
+    height: 1.5vmax;
+
+    border-radius: 50%;
+
+    background-color: #72afe4;
+    border: solid 0.3vmax #72afe4;
+  }
+} ;
