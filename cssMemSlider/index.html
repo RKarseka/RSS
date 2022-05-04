@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./normalise.css">
+  <link rel="stylesheet" href="./style.css">
+
+
+  <title>cssMemSlider</title>
+</head>
+
+<body>
+  <header>
+
+    <h1>CSS Mem Slider</h1>
+
+  </header>
+  <main class="container">
+
+    <input type="radio" name="controls" id="controls__pointer01"
+      class="controls__pointer">
+    <input type="radio" name="controls" id="controls__pointer02"
+      class="controls__pointer">
+    <input type="radio" name="controls" id="controls__pointer03"
+      class="controls__pointer">
+    <input type="radio" name="controls" id="controls__pointer04"
+      class="controls__pointer" checked>
+    <input type="radio" name="controls" id="controls__pointer05"
+      class="controls__pointer">
+    <input type="radio" name="controls" id="controls__pointer06"
+      class="controls__pointer">
+    <input type="radio" name="controls" id="controls__pointer07"
+      class="controls__pointer">
+
+    <div class="mems__container">
+      <!-- img#mems__slide$$.mems__slides[src="./img/$$.png" alt="mem#$$"]*7 -->
+      <img src="./img/01.png" alt="mem#01" id="mems__slide01"
+        class="mems__slides"><img src="./img/02.png" alt="mem#02"
+        id="mems__slide02" class="mems__slides"><img src="./img/03.png"
+        alt="mem#03" id="mems__slide03" class="mems__slides"><img
+        src="./img/04.png" alt="mem#04" id="mems__slide04"
+        class="mems__slides"><img src="./img/05.png" alt="mem#05"
+        id="mems__slide05" class="mems__slides"><img src="./img/06.png"
+        alt="mem#06" id="mems__slide06" class="mems__slides"><img
+        src="./img/07.png" alt="mem#07" id="mems__slide07" class="mems__slides">
+
+
+    </div>
+
+    <div class="control-container">
+
+      <div class="control__notes">
+
+        <!-- p#notes__p$$.notes__p*7 -->
+
+        <p id="notes__p01" class="notes__p">Russian realities</p>
+        <p id="notes__p02" class="notes__p">COVID'19 realities</p>
+        <p id="notes__p03" class="notes__p">Frontend vs Backend</p>
+        <p id="notes__p04" class="notes__p">Weekend</p>
+        <p id="notes__p05" class="notes__p">Full stack debeloper</p>
+        <p id="notes__p06" class="notes__p">.css life hack</p>
+        <p id="notes__p07" class="notes__p">.css importance</p>
+
+      </div>
+      <div class="controls__form">
+
+        <!-- <input type="radio" name="" id=""> -->
+
+        <label for="controls__pointer01" class="controls__label"></label>
+        <label for="controls__pointer02" class="controls__label"></label>
+        <label for="controls__pointer03" class="controls__label"></label>
+        <label for="controls__pointer04" class="controls__label"></label>
+        <label for="controls__pointer05" class="controls__label"></label>
+        <label for="controls__pointer06" class="controls__label"></label>
+        <label for="controls__pointer07" class="controls__label"></label>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+
+</body>
+
+</html>
